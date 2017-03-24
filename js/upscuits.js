@@ -29,7 +29,7 @@ myApp.dashboard = (function($) {
 		$_servertitle.append("<th style=\"width:10%\">30 Days</th>");
 		for (var d=6;d>=0;d--) {
 			tmpdate = new Date(Date.parse(new Date().toString()) - 86400000*d);
-			datestr = tmpdate.getDate() + "/" + (tmpdate.getMonth()+1) + "/" + tmpdate.getFullYear();
+			datestr = (tmpdate.getMonth()+1) + "/" + tmpdate.getDate() + "/" + tmpdate.getFullYear();
 			$_servertitle.append("<th style=\"width:10%\">"+datestr+"</th>");
 		}
 		error = false;
@@ -38,7 +38,6 @@ myApp.dashboard = (function($) {
 		for (var i in __apiKeys) {
 			getUptime(__apiKeys[i], i);
 		}
-
 		_intervalId = setInterval(countdown, 1000);
 	}
 	/* load uptime variables from uptimerobot
