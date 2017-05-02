@@ -8,7 +8,6 @@ var __apiKeys = [
     "m778725396-a82eb2e429daa1fa81e26b31", // Github XXX.153 Host 1
     "m778725399-beff1a78a86f4edead179679", // Github XXX.154 Host 2
     "m778725626-7327f3cd7deb4ebccb4e427f", //sc.clarkhacks.com
-    "m778802590-d83d6ab42ae05b65854c5d55"  // XXX.clarkhacks.com
 ];
 // refresh interval (in seconds)
 var __refresh = 900;
