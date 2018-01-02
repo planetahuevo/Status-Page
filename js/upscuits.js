@@ -202,11 +202,11 @@ myApp.dashboard = (function($) {
 			if (uptimes[a]>=99.95) {
 				uptimeb[a] = "Uptime 100%";
 			} else if (uptimes[a]<=0) {
-				uptimeb[a] = "Uptime 0.00%<br> Hors-ligne: "+(a==uptimes.length-1?'720 heures':'24 heures');
+				uptimeb[a] = "Uptime 0.00%<br> Offline: "+(a==uptimes.length-1?'720 hours':'24 hours');
 			} else if (tm<60) {
-				uptimeb[a] = "Uptime "+new Number(uptimes[a]).toFixed(2)+"%<br>Hors-ligne: "+new Number(tm).toFixed(0)+" heure";
+				uptimeb[a] = "Uptime "+new Number(uptimes[a]).toFixed(2)+"%<br>Offline: "+new Number(tm).toFixed(0)+" hour";
 			} else {
-				uptimeb[a] = "Uptime "+new Number(uptimes[a]).toFixed(2)+"%<br>Hors-ligne "+new Number(th).toFixed(1)+" heure";
+				uptimeb[a] = "Uptime "+new Number(uptimes[a]).toFixed(2)+"%<br>Offline "+new Number(th).toFixed(1)+" hour";
 			}
 		}
 		//uptimes.push(data.alltimeuptimeratio);
